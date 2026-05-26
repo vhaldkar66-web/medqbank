@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedQBank — Free Medical PG MCQs | NEET PG, AIIMS, INICET, FMGE Previous Year Questions</title>
+  <meta name="description" content="8,379 free previous year MCQs for NEET PG, AIIMS, INICET, FMGE and UPSC-CMS with detailed explanations. Subjectwise and topicwise QBank — no login required.">
+  <meta name="keywords" content="NEET PG MCQ, AIIMS PG questions, INICET previous year, FMGE questions, medical PG entrance, free QBank, anatomy MCQ, pharmacology MCQ, medicine MCQ">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.medqbank.in/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MedQBank — Free Medical PG MCQs with Explanations">
+  <meta property="og:description" content="8,379 free previous year MCQs for NEET PG, AIIMS, INICET, FMGE and UPSC-CMS. Subjectwise and topicwise. No login required.">
+  <meta property="og:url" content="https://www.medqbank.in/">
+  <meta property="og:site_name" content="MedQBank">
+  <meta property="og:image" content="https://www.medqbank.in/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MedQBank — Free Medical PG MCQs">
+  <meta name="twitter:description" content="8,379 free previous year MCQs for NEET PG, AIIMS, INICET, FMGE — with explanations.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MedQBank",
+    "url": "https://www.medqbank.in/",
+    "description": "Free previous year MCQs for NEET PG, AIIMS, INICET, FMGE and UPSC-CMS with detailed explanations.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.medqbank.in/qbank.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="hu19FUcBDGXsDxTKvwUVdRVprEL3AurYl7Gu_AfCGqQ">
+
+  <!-- Google AdSense Verification -->
+  <meta name="google-adsense-account" content="ca-pub-7689781817538667">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── HERO (uses new CSS base, page-specific overrides only) ── */
+    .hero { color: #fff; padding: 88px 0 80px; text-align: center; }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.20);
+      border-radius: 99px; padding: 6px 18px; font-size: 13px; font-weight: 500;
+      margin-bottom: 28px; color: rgba(255,255,255,0.85); backdrop-filter: blur(8px);
+    }
+    .hero h1 { font-style: italic; color: #fff; margin-bottom: 18px; }
+    .hero h1 span { color: #7dd3fc; font-style: normal; }
+    .hero > .container > p,
+    .hero p { font-size: 17px; color: rgba(255,255,255,0.72); max-width: 540px; margin: 0 auto 36px; }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* Hero buttons */
+    .btn-white {
+      background: #fff; color: var(--accent-dark);
+      border: 2px solid #fff; border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .btn-white:hover { background: #eef4ff; transform: translateY(-2px); }
+    .btn-outline-white {
+      background: rgba(255,255,255,0.08); color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.35); border-radius: 10px;
+      backdrop-filter: blur(8px);
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.7); }
+
+    /* ── STAT STRIP ── */
+    .stat-strip { background: var(--surface); border-bottom: 1px solid var(--border); }
+    .stat-strip-inner {
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 0; max-width: 900px; margin: 0 auto;
+    }
+    .stat-item {
+      flex: 1; min-width: 140px; padding: 24px;
+      text-align: center; border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-val {
+      font-family: 'Fraunces', serif; font-size: 34px;
+      color: var(--accent-dark); line-height: 1; font-weight: 400;
+    }
+    .stat-label { font-size: 12px; color: var(--text3); margin-top: 6px; font-weight: 500; letter-spacing: 0.02em; }
+
+    /* ── FEATURES ── */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .feature-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+    .feature-icon { font-size: 28px; margin-bottom: 14px; }
+    .feature-card h3 { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .feature-card p { font-size: 13px; color: var(--text2); line-height: 1.65; }
+
+    /* ── SUBJECT CARDS ── */
+    .subjects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+    .subj-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: var(--shadow); transition: all 0.2s; cursor: pointer;
+      text-decoration: none; color: inherit;
+    }
+    .subj-card:hover { border-color: var(--accent); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .subj-card-left { flex: 1; }
+    .subj-card-name { font-weight: 600; font-size: 14px; color: var(--text); margin-bottom: 4px; }
+    .subj-card-count { font-size: 12px; color: var(--text3); }
+    .subj-card-arrow { font-size: 18px; color: var(--text3); transition: color 0.15s; }
+    .subj-card:hover .subj-card-arrow { color: var(--accent); }
+
+    /* ── EXAM CARDS ── */
+    .exam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+    .exam-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px 20px;
+      text-align: center; box-shadow: var(--shadow);
+      transition: all 0.2s; text-decoration: none; color: inherit;
+    }
+    .exam-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .exam-card-name {
+      font-family: 'Fraunces', serif; font-size: 24px;
+      color: var(--accent-dark); margin-bottom: 6px; font-weight: 400;
+    }
+    .exam-card-count { font-size: 12px; color: var(--text3); margin-bottom: 16px; }
+
+    /* ── AFFILIATE STRIP ── */
+    .affiliate-strip {
+      background: linear-gradient(135deg, #0f1e3a 0%, #1a3a6b 100%);
+      border-radius: var(--radius-lg); padding: 36px 44px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; flex-wrap: wrap; color: #fff;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow-lg);
+    }
+    .affiliate-strip h3 { font-family: 'Fraunces', serif; font-size: 22px; color: #fff; margin-bottom: 8px; font-weight: 400; }
+    .affiliate-strip p { color: rgba(255,255,255,0.6); font-size: 14px; }
+    .aff-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .aff-link {
+      background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.20);
+      color: #fff; border-radius: 9px; padding: 10px 20px;
+      font-size: 13px; font-weight: 600; transition: all 0.18s; text-decoration: none;
+      backdrop-filter: blur(8px);
+    }
+    .aff-link:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.4); transform: translateY(-1px); }
+
+    /* ── SECTION HEADINGS ── */
+    .section-hdr { text-align: center; margin-bottom: 44px; }
+    .section-hdr p { font-size: 16px; color: var(--text2); margin-top: 10px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+    }
+    .eyebrow::before { content: ''; width: 18px; height: 2px; background: var(--accent); border-radius: 2px; display: inline-block; }
+
+    @media (max-width: 640px) {
+      .hero { padding: 60px 0 52px; }
+      .stat-item { min-width: 100px; padding: 18px 12px; }
+      .stat-val { font-size: 26px; }
+      .affiliate-strip { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">🎓 Free for all medical students</div>
+    <h1>Previous Year MCQs<br>for <span>Medical PG</span> Entrance</h1>
+    <p>8,379 questions from NEET PG, AIIMS, INICET, FMGE & UPSC-CMS — subjectwise, topicwise, with full explanations.</p>
+    <div class="hero-actions">
+      <a href="qbank.html" class="btn btn-white btn-lg">Start Practice →</a>
+      <a href="subjects.html" class="btn btn-outline-white btn-lg">Browse Subjects</a>
+    </div>
+  </div>
+</section>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-strip-inner">
+    <div class="stat-item"><div class="stat-val">8,379</div><div class="stat-label">Total Questions</div></div>
+    <div class="stat-item"><div class="stat-val">20</div><div class="stat-label">Subjects</div></div>
+    <div class="stat-item"><div class="stat-val">5</div><div class="stat-label">Exams Covered</div></div>
+    <div class="stat-item"><div class="stat-val">2017–25</div><div class="stat-label">Year Range</div></div>
+    <div class="stat-item"><div class="stat-val">100%</div><div class="stat-label">Free, No Login</div></div>
+  </div>
+</div>
+
+<!-- BANNER AD -->
+<div class="container section-sm">
+  <div class="ad-slot ad-slot-banner">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-hdr">
+      <div class="eyebrow">Why MedQBank</div>
+      <h2>Built for how you actually study</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">📚</div><h3>Subjectwise + Topicwise</h3><p>Filter by subject and drill down to specific topics like Upper Limb, CVS, Renal, and more.</p></div>
+      <div class="feature-card"><div class="feature-icon">📋</div><h3>Full Explanations</h3><p>Every question has a detailed explanation — text, tables, and images where available.</p></div>
+      <div class="feature-card"><div class="feature-icon">🎯</div><h3>Practice & Test Modes</h3><p>Practice mode shows explanations immediately. Test mode hides them until you click.</p></div>
+      <div class="feature-card"><div class="feature-icon">⇄</div><h3>Shuffle & Filter</h3><p>Randomise question order, filter by exam type and year to simulate real test conditions.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔖</div><h3>Bookmarks</h3><p>Bookmark tricky questions and review them anytime. Progress is saved automatically.</p></div>
+      <div class="feature-card"><div class="feature-icon">📱</div><h3>Works on Mobile</h3><p>Fully responsive — study on your phone during a break or on your laptop at home.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBJECTS -->
+<section class="section" style="background:var(--surface2); padding-top:48px; padding-bottom:48px">
+  <div class="container">
+    <div class="section-hdr">
+      <div class="eyebrow">Subjects</div>
+      <h2>Browse by Subject</h2>
+      <p>Click any subject to load its questions directly in the QBank.</p>
+    </div>
+    <div class="subjects-grid" id="subjects-grid">
+      <!-- Injected by JS -->
+    </div>
+    <div style="text-align:center;margin-top:24px">
+      <a href="subjects.html" class="btn btn-outline">View All Subjects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- EXAMS -->
+<section class="section">
+  <div class="container">
+    <div class="section-hdr">
+      <div class="eyebrow">Exams</div>
+      <h2>Filter by Exam</h2>
+    </div>
+    <div class="exam-grid">
+      <a href="qbank.html?exam=NEET PG" class="exam-card">
+        <div class="exam-card-name">NEET PG</div>
+        <div class="exam-card-count">1,900 questions · 2018–2024</div>
+        <span class="btn btn-primary btn-sm">Practice →</span>
+      </a>
+      <a href="qbank.html?exam=AIIMS" class="exam-card">
+        <div class="exam-card-name">AIIMS</div>
+        <div class="exam-card-count">1,400 questions · 2017–2020</div>
+        <span class="btn btn-primary btn-sm">Practice →</span>
+      </a>
+      <a href="qbank.html?exam=INICET" class="exam-card">
+        <div class="exam-card-name">INICET</div>
+        <div class="exam-card-count">2,028 questions · 2020–2024</div>
+        <span class="btn btn-primary btn-sm">Practice →</span>
+      </a>
+      <a href="qbank.html?exam=FMGE" class="exam-card">
+        <div class="exam-card-name">FMGE</div>
+        <div class="exam-card-count">2,811 questions · 2020–2025</div>
+        <span class="btn btn-primary btn-sm">Practice →</span>
+      </a>
+      <a href="qbank.html?exam=UPSC-CMS" class="exam-card">
+        <div class="exam-card-name">UPSC CMS</div>
+        <div class="exam-card-count">240 questions · 2023</div>
+        <span class="btn btn-primary btn-sm">Practice →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AFFILIATE / PARTNER SECTION -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="affiliate-strip">
+      <div>
+        <h3>Want video lectures to go with these MCQs?</h3>
+        <p>Check out top-rated platforms used by NEET PG toppers. We may earn a commission at no extra cost to you.</p>
+      </div>
+      <div class="aff-links">
+        <a href="https://marrow.com" target="_blank" rel="noopener sponsored" class="aff-link">Marrow ↗</a>
+        <a href="https://prepladder.com" target="_blank" rel="noopener sponsored" class="aff-link">PrepLadder ↗</a>
+        <a href="https://damsdelhi.com" target="_blank" rel="noopener sponsored" class="aff-link">DAMS ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM BANNER AD -->
+<div class="container" style="margin-bottom:32px">
+  <div class="ad-slot ad-slot-banner">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+  </div>
+</div>
+
+<script src="utils.js"></script>
+<script>
+  injectNavbar('Home');
+  injectFooter();
+
+  // Build subject cards dynamically
+  getManifest().then(manifest => {
+    const grid = document.getElementById('subjects-grid');
+    const icons = {
+      'Anatomy':'🦴','Physiology':'❤️','Biochemistry':'🧪','Pharmacology':'💊',
+      'Pathology':'🔬','Microbiology':'🦠','Medicine':'🩺','Surgery':'🔪',
+      'Obstetrics & Gynecology':'🤰','Pediatrics':'👶','Preventive & Social Medicine':'🌍',
+      'Forensic Medicine':'⚖️','Psychiatry':'🧠','ENT':'👂','Ophthalmology':'👁️',
+      'Dermatology':'🩹','Orthopaedics':'🦵','Radiology':'📡','Anaesthesia':'💉','General Medicine':'🏥'
+    };
+    grid.innerHTML = manifest.subjects.map(s =>
+      `<a href="qbank.html#${s.slug}" class="subj-card">
+        <div class="subj-card-left">
+          <div class="subj-card-name">${icons[s.name] || '📖'} ${s.name}</div>
+          <div class="subj-card-count">${s.count.toLocaleString()} questions</div>
+        </div>
+        <span class="subj-card-arrow">→</span>
+      </a>`
+    ).join('');
+  });
+</script>
+
+</body>
+</html>

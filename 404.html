@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | MedQBank</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .err-wrap{min-height:calc(100vh - 60px);display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+    .err-code{font-family:'DM Serif Display',serif;font-size:96px;color:var(--border);line-height:1}
+    .err-title{font-family:'DM Serif Display',serif;font-size:28px;color:var(--text);margin:16px 0 10px}
+    .err-msg{font-size:16px;color:var(--text2);margin-bottom:28px}
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<div class="err-wrap">
+  <div>
+    <div class="err-code">404</div>
+    <div class="err-title">Page not found</div>
+    <p class="err-msg">The page you're looking for doesn't exist or has been moved.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="index.html" class="btn btn-primary">Go Home</a>
+      <a href="qbank.html" class="btn btn-outline">Open QBank</a>
+    </div>
+  </div>
+</div>
+<script src="utils.js"></script>
+<script>injectNavbar(); injectFooter();</script>
+</body>
+</html>

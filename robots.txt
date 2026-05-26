@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.medqbank.in/sitemap.xml
+
+# Disallow data files from being indexed directly
+Disallow: /data/

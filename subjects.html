@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical PG Subjects — Anatomy, Pharmacology, Medicine & More | MedQBank</title>
+  <meta name="description" content="Browse 8,379 medical PG MCQs by subject — Anatomy, Physiology, Biochemistry, Pharmacology, Pathology, Microbiology, Medicine, Surgery and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.medqbank.in/subjects.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .subjects-hero { background: var(--accent-light); border-bottom: 1px solid var(--border); padding: 40px 0; text-align: center; }
+    .subjects-hero h1 { font-size: 36px; color: var(--accent-dark); margin-bottom: 8px; }
+    .subjects-hero p { font-size: 16px; color: var(--text2); }
+
+    .subj-full-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+    .subj-full-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+      transition: box-shadow 0.2s;
+    }
+    .subj-full-card:hover { box-shadow: var(--shadow-lg); }
+    .subj-card-header {
+      padding: 20px 20px 16px; display: flex; align-items: center; gap: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .subj-icon { font-size: 32px; flex-shrink: 0; }
+    .subj-card-name { font-size: 17px; font-weight: 700; color: var(--text); }
+    .subj-card-meta { font-size: 12px; color: var(--text3); margin-top: 2px; }
+    .subj-card-body { padding: 14px 20px 16px; }
+    .topic-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .topic-chip {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 4px; padding: 3px 9px; font-size: 11px; font-weight: 500; color: var(--text2);
+    }
+    .subj-card-actions { display: flex; gap: 8px; }
+
+    .faq-section { background: var(--surface2); }
+    .faq-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 16px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+    .faq-q { font-weight: 600; color: var(--text); margin-bottom: 8px; font-size: 15px; }
+    .faq-a { font-size: 14px; color: var(--text2); line-height: 1.7; }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+
+<!-- HERO -->
+<div class="subjects-hero">
+  <div class="container">
+    <h1>Browse by Subject</h1>
+    <p>Select a subject to start practising targeted MCQs</p>
+  </div>
+</div>
+
+<!-- BANNER AD -->
+<div class="container section-sm" style="padding-bottom:0">
+  <div class="ad-slot ad-slot-banner">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+  </div>
+</div>
+
+<!-- SUBJECTS GRID -->
+<section class="section">
+  <div class="container">
+    <div class="subj-full-grid" id="subj-full-grid">
+      <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3)">Loading subjects…</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (for SEO) -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-hdr" style="text-align:center;margin-bottom:32px">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q">Which exams are covered in MedQBank?</div>
+        <div class="faq-a">MedQBank covers NEET PG (2018–2024), AIIMS PG (2017–2020), INICET (2020–2024), FMGE/MCI Screening (2020–2025), and UPSC CMS (2023) — a total of 8,379 questions.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need to create an account?</div>
+        <div class="faq-a">No. MedQBank is completely free and requires no login. Your progress and bookmarks are saved automatically in your browser.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Which subject has the most questions?</div>
+        <div class="faq-a">Medicine has the most questions (1,606), followed by Psychiatry (1,106), Preventive & Social Medicine (1,044), FMGE (2,811 total), and Pharmacology (648).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I filter questions by year?</div>
+        <div class="faq-a">Yes. In the QBank, use the Year filter in the sidebar to show questions from a specific exam year, from 2017 to 2025.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is Practice Mode vs Test Mode?</div>
+        <div class="faq-a">Practice Mode automatically shows the explanation as soon as you select an answer — ideal for active learning. Test Mode hides the explanation until you click "Explanation", letting you attempt the question first and self-assess.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Are these the actual exam questions?</div>
+        <div class="faq-a">These are recalled questions from previous year papers as reported by students and published by coaching institutes. They may differ slightly from officially released papers.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JSON-LD FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Which exams are covered in MedQBank?","acceptedAnswer":{"@type":"Answer","text":"MedQBank covers NEET PG (2018–2024), AIIMS PG (2017–2020), INICET (2020–2024), FMGE (2020–2025), and UPSC CMS (2023) — 8,379 questions total."}},
+    {"@type":"Question","name":"Do I need to create an account?","acceptedAnswer":{"@type":"Answer","text":"No. MedQBank is completely free and requires no login. Progress is saved in your browser."}},
+    {"@type":"Question","name":"What is Practice Mode vs Test Mode?","acceptedAnswer":{"@type":"Answer","text":"Practice Mode shows the explanation immediately after you answer. Test Mode hides it until you click Explanation."}}
+  ]
+}
+</script>
+
+<script src="utils.js"></script>
+<script>
+  injectNavbar('Subjects');
+  injectFooter();
+
+  const SUBJECT_ICONS = {
+    'Anatomy':'🦴','Physiology':'❤️','Biochemistry':'🧪','Pharmacology':'💊',
+    'Pathology':'🔬','Microbiology':'🦠','Medicine':'🩺','Surgery':'🔪',
+    'Obstetrics & Gynecology':'🤰','Pediatrics':'👶',
+    'Preventive & Social Medicine':'🌍','Forensic Medicine':'⚖️',
+    'Psychiatry':'🧠','ENT':'👂','Ophthalmology':'👁️','Dermatology':'🩹',
+    'Orthopaedics':'🦵','Radiology':'📡','Anaesthesia':'💉','General Medicine':'🏥'
+  };
+
+  const SUBJECT_TOPICS = {
+    'Anatomy': ['Upper Limb','Lower Limb','Thorax','Abdomen','Head & Neck','Neuroanatomy','Pelvis & Perineum'],
+    'Physiology': ['Cardiovascular','Respiratory','Renal','Endocrine','Neurophysiology','Blood','Gastrointestinal'],
+    'Pharmacology': ['Antibiotics','CNS Drugs','Cardiovascular Drugs','Autonomic Pharmacology','Anti-infectives','General Pharmacology'],
+    'Medicine': ['Cardiology','Respiratory','Nephrology','Neurology','Endocrinology','Rheumatology','GI & Hepatology','Haematology','Infectious Diseases'],
+    'Preventive & Social Medicine': ['Biostatistics','Epidemiology','National Health Programmes','Environmental Health','Occupational Health','Demography'],
+  };
+
+  const SUBJECT_DESCS = {
+    'Anatomy': 'Gross anatomy, neuroanatomy, histology and embryology questions.',
+    'Physiology': 'Cardiovascular, respiratory, renal, neural and endocrine physiology.',
+    'Biochemistry': 'Metabolism pathways, molecular biology, enzyme kinetics and vitamins.',
+    'Pharmacology': 'Mechanism of action, drug interactions, side effects and antidotes.',
+    'Pathology': 'General and systemic pathology, tumour markers and histopathology.',
+    'Microbiology': 'Bacteriology, virology, mycology, parasitology and immunology.',
+    'Medicine': 'Internal medicine covering all organ systems and infectious diseases.',
+    'Surgery': 'General surgery, surgical anatomy and perioperative care.',
+    'Preventive & Social Medicine': 'Epidemiology, biostatistics, national health programmes and environmental health.',
+    'Psychiatry': 'Mental disorders, psychopharmacology and clinical psychiatry.',
+  };
+
+  getManifest().then(manifest => {
+    const grid = document.getElementById('subj-full-grid');
+    grid.innerHTML = manifest.subjects.map(s => {
+      const slug = s.slug;
+      const icon = SUBJECT_ICONS[s.name] || '📖';
+      const topics = SUBJECT_TOPICS[s.name] || [];
+      const desc = SUBJECT_DESCS[s.name] || `Previous year ${s.name} MCQs from NEET PG, AIIMS, INICET and FMGE.`;
+      const topicChips = topics.map(t => `<span class="topic-chip">${t}</span>`).join('');
+      return `
+        <div class="subj-full-card">
+          <div class="subj-card-header">
+            <span class="subj-icon">${icon}</span>
+            <div>
+              <div class="subj-card-name">${s.name}</div>
+              <div class="subj-card-meta">${s.count.toLocaleString()} questions</div>
+            </div>
+          </div>
+          <div class="subj-card-body">
+            <p style="font-size:13px;color:var(--text2);margin-bottom:12px">${desc}</p>
+            ${topicChips ? `<div class="topic-chips">${topicChips}</div>` : ''}
+            <div class="subj-card-actions">
+              <a href="qbank.html#${slug}" class="btn btn-primary btn-sm">Practice →</a>
+              <a href="qbank.html#${slug}" class="btn btn-secondary btn-sm">All Topics</a>
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+  });
+</script>
+</body>
+</html>

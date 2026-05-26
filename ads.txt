@@ -1,0 +1,5 @@
+# ads.txt — Required by Google AdSense
+# Replace ca-pub-XXXXXXXXXXXXXXXX with your actual AdSense publisher ID
+# This file must be at the root of your domain: https://www.medqbank.in/ads.txt
+
+google.com, pub-7689781817538667, DIRECT, f08c47fec0942fa0

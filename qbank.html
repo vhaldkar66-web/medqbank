@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QBank — Medical PG MCQ Practice | MedQBank</title>
+  <meta name="description" content="Practice 8,379 medical PG MCQs from NEET PG, AIIMS, INICET, FMGE and UPSC-CMS. Filter by subject, topic, exam and year. Free, no login required.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.medqbank.in/qbank.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Medical PG QBank — Practice 8,379 MCQs Free">
+  <meta property="og:description" content="Previous year MCQs from NEET PG, AIIMS, INICET, FMGE — subjectwise and topicwise with explanations.">
+  <meta property="og:url" content="https://www.medqbank.in/qbank.html">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Medical PG QBank",
+    "description": "8,379 previous year MCQs from NEET PG, AIIMS, INICET, FMGE and UPSC-CMS with detailed explanations.",
+    "url": "https://www.medqbank.in/qbank.html",
+    "provider": { "@type": "Organization", "name": "MedQBank" },
+    "educationalLevel": "Postgraduate",
+    "learningResourceType": "Quiz"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="qbank.css">
+</head>
+<body style="overflow:hidden">
+
+<div id="navbar-placeholder"></div>
+
+<div id="qbank-wrap">
+
+  <!-- SIDEBAR -->
+  <nav id="sidebar">
+    <div id="sidebar-inner">
+
+      <!-- Mode -->
+      <div class="sb-section" style="padding-top:12px">
+        <div class="sb-label">Study Mode</div>
+        <div class="mode-row">
+          <button class="mode-btn active" id="mode-practice" onclick="setMode('practice')">Practice</button>
+          <button class="mode-btn" id="mode-test" onclick="setMode('test')">Test</button>
+        </div>
+      </div>
+      <div class="sb-divider"></div>
+
+      <!-- Search -->
+      <div class="sb-section">
+        <div class="sb-label">Search Questions</div>
+        <div class="search-wrap" style="margin-bottom:12px">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search by keyword…" oninput="onSearch()">
+        </div>
+      </div>
+      <div class="sb-divider"></div>
+
+      <!-- Exam Filter -->
+      <div class="sb-section"><div class="sb-label">Exam</div></div>
+      <div class="exam-filters">
+        <button class="exam-chip active" data-exam="ALL" onclick="setExam('ALL')">All</button>
+        <button class="exam-chip" data-exam="AIIMS" onclick="setExam('AIIMS')">AIIMS</button>
+        <button class="exam-chip" data-exam="INICET" onclick="setExam('INICET')">INICET</button>
+        <button class="exam-chip" data-exam="NEET PG" onclick="setExam('NEET PG')">NEET PG</button>
+        <button class="exam-chip" data-exam="FMGE" onclick="setExam('FMGE')">FMGE</button>
+        <button class="exam-chip" data-exam="UPSC-CMS" onclick="setExam('UPSC-CMS')">UPSC CMS</button>
+      </div>
+      <div class="sb-divider"></div>
+
+      <!-- Year -->
+      <div class="sb-section">
+        <div class="sb-label">Year</div>
+        <select class="sb-select" id="year-filter" onchange="setYear(this.value)" style="margin-bottom:12px">
+          <option value="">All Years</option>
+        </select>
+      </div>
+      <div class="sb-divider"></div>
+
+      <!-- Subjects -->
+      <div class="sb-section"><div class="sb-label">Subjects & Topics</div></div>
+      <div class="subj-list" id="subject-list">
+        <div style="padding:20px;text-align:center;color:var(--text3);font-size:13px">Loading…</div>
+      </div>
+
+      <!-- Sidebar Ad -->
+      <div class="sb-divider"></div>
+      <div class="sb-ad">
+        <div class="ad-slot ad-slot-sidebar" style="min-height:200px">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Overlay for mobile sidebar -->
+  <div id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- MAIN CONTENT -->
+  <div id="qbank-content">
+
+    <!-- Session Bar -->
+    <div id="session-bar">
+      <button class="sb-toggle-btn" onclick="toggleSidebar()">☰</button>
+      <div class="sess-stat">Answered <span class="sess-val val-total" id="sb-ans">0</span></div>
+      <div class="sess-stat">Correct <span class="sess-val val-correct" id="sb-cor">0</span></div>
+      <div class="sess-stat">Wrong <span class="sess-val val-wrong" id="sb-wrg">0</span></div>
+      <div class="sess-stat">Score <span class="sess-val" id="sb-score">—</span></div>
+      <div class="sess-actions">
+        <button class="btn btn-secondary btn-sm" onclick="resetSession()">Reset</button>
+        <button class="btn btn-secondary btn-sm" onclick="switchTab('bookmarks')">🔖 <span id="sb-bk">0</span></button>
+      </div>
+      <!-- Header stats (desktop) -->
+      <div style="margin-left:auto;display:flex;gap:12px;align-items:center" id="hdr-stats">
+        <span style="font-size:12px;color:var(--text3)">Filtered: <b id="hs-filtered">—</b></span>
+        <span style="font-size:12px;color:var(--text3)">Attempted: <b id="hs-attempted">0</b></span>
+        <span style="font-size:12px;color:var(--text3)">Accuracy: <b id="hs-accuracy">—</b></span>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+
+    <!-- Tabs -->
+    <div class="qb-tabs">
+      <button class="qb-tab active" id="tab-questions" onclick="switchTab('questions')">Questions</button>
+      <button class="qb-tab" id="tab-bookmarks" onclick="switchTab('bookmarks')">🔖 Bookmarks</button>
+    </div>
+
+    <!-- Content Header -->
+    <div class="content-hdr">
+      <div class="content-hdr-left">
+        <div class="content-title" id="content-title">All Questions</div>
+        <div class="content-subtitle" id="content-subtitle">Loading questions…</div>
+      </div>
+      <div class="content-hdr-actions">
+        <button class="btn btn-secondary btn-sm" id="shuffle-btn" onclick="toggleShuffle()">⇄ Shuffle</button>
+        <button class="btn btn-secondary btn-sm" onclick="expandAll()">Expand All</button>
+        <button class="btn btn-ghost btn-sm" onclick="collapseAll()">Collapse</button>
+      </div>
+    </div>
+
+    <!-- Loading state -->
+    <div id="loading-state" class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading questions…</p>
+    </div>
+
+    <!-- Questions -->
+    <div id="questions-list" style="display:none"></div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+
+  </div><!-- /qbank-content -->
+</div><!-- /qbank-wrap -->
+
+<script src="utils.js"></script>
+<script src="qbank.js"></script>
+<script>
+  injectNavbar('QBank');
+  document.addEventListener('DOMContentLoaded', initQBank);
+</script>
+
+</body>
+</html>
